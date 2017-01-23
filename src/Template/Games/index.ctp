@@ -13,7 +13,7 @@
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('category_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('game_category_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -24,7 +24,7 @@
             <tr>
                 <td><?= $this->Number->format($game->id) ?></td>
                 <td><?= h($game->title) ?></td>
-                <td><?= $this->Number->format($game->category_id) ?></td>
+                <td><?= $this->Number->format($game->game_category_id) ?></td>
                 <td><?= h($game->created) ?></td>
                 <td><?= h($game->modified) ?></td>
                 <td class="actions">

@@ -19,7 +19,7 @@ class GamesFixture extends TestFixture
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'title' => ['type' => 'string', 'length' => 100, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'category_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'game_category_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         '_constraints' => [
@@ -41,9 +41,9 @@ class GamesFixture extends TestFixture
         [
             'id' => 1,
             'title' => 'Lorem ipsum dolor sit amet',
-            'category_id' => 1,
-            'created' => '2017-01-23 04:05:17',
-            'modified' => '2017-01-23 04:05:17'
+            'game_category_id' => 1,
+            'created' => '2017-01-23 04:50:06',
+            'modified' => '2017-01-23 04:50:06'
         ],
     ];
 }

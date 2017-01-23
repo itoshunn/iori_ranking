@@ -18,7 +18,7 @@
         <legend><?= __('Edit Game') ?></legend>
         <?php
             echo $this->Form->input('title');
-            echo $this->Form->input('category_id');
+            echo $this->Form->input('game_category_id');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

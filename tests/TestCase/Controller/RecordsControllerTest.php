@@ -19,7 +19,7 @@ class RecordsControllerTest extends IntegrationTestCase
         'app.records',
         'app.users',
         'app.games',
-        'app.categories'
+        'app.game_categories'
     ];
 
     /**

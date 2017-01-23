@@ -21,8 +21,8 @@
             <td><?= $this->Number->format($game->id) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Category Id') ?></th>
-            <td><?= $this->Number->format($game->category_id) ?></td>
+            <th scope="row"><?= __('Game Category Id') ?></th>
+            <td><?= $this->Number->format($game->game_category_id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

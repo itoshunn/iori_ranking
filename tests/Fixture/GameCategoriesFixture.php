@@ -40,8 +40,8 @@ class GameCategoriesFixture extends TestFixture
         [
             'id' => 1,
             'name' => 'Lorem ipsum dolor sit amet',
-            'created' => '2017-01-23 04:05:27',
-            'modified' => '2017-01-23 04:05:27'
+            'created' => '2017-01-23 04:50:19',
+            'modified' => '2017-01-23 04:50:19'
         ],
     ];
 }

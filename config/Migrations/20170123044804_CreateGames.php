@@ -18,7 +18,7 @@ class CreateGames extends AbstractMigration
             'limit' => 100,
             'null' => false,
         ]);
-        $table->addColumn('category_id', 'integer', [
+        $table->addColumn('game_category_id', 'integer', [
             'default' => null,
             'limit' => 11,
             'null' => false,

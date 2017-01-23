@@ -50,8 +50,8 @@ class RecordsFixture extends TestFixture
             'win' => 1,
             'lose' => 1,
             'draw' => 1,
-            'created' => '2017-01-23 04:06:03',
-            'modified' => '2017-01-23 04:06:03'
+            'created' => '2017-01-23 04:50:29',
+            'modified' => '2017-01-23 04:50:29'
         ],
     ];
 }

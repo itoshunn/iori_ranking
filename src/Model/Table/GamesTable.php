@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Games Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Categories
+ * @property \Cake\ORM\Association\BelongsTo $GameCategories
  * @property \Cake\ORM\Association\HasMany $Records
  *
  * @method \App\Model\Entity\Game get($primaryKey, $options = [])
@@ -41,8 +41,8 @@ class GamesTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('Categories', [
-            'foreignKey' => 'category_id',
+        $this->belongsTo('game_categories', [
+            'foreignKey' => 'game_category_id',
             'joinType' => 'INNER'
         ]);
         $this->hasMany('Records', [
@@ -78,7 +78,7 @@ class GamesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['category_id'], 'Categories'));
+        $rules->add($rules->existsIn(['game_category_id'], 'game_categories'));
 
         return $rules;
     }

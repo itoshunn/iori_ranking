@@ -8,7 +8,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $title
- * @property int $category_id
+ * @property int $game_category_id
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
  *

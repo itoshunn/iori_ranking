@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * GameCategories Model
  *
+ * @property \Cake\ORM\Association\HasMany $Games
+ *
  * @method \App\Model\Entity\GameCategory get($primaryKey, $options = [])
  * @method \App\Model\Entity\GameCategory newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\GameCategory[] newEntities(array $data, array $options = [])
@@ -37,6 +39,10 @@ class GameCategoriesTable extends Table
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
+
+        $this->hasMany('Games', [
+            'foreignKey' => 'game_category_id'
+        ]);
     }
 
     /**

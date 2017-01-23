@@ -1,7 +1,7 @@
 /* Users */
 bin/cake bake migration CreateUsers name:string[100] age:integer[3] gender:integer[1] created modified
 /* Games */
-bin/cake bake migration CreateGames title:string[100] category_id:integer created modified
+bin/cake bake migration CreateGames title:string[100] game_category_id:integer created modified
 /* Game_categories */
 bin/cake bake migration CreateGame_categories name:string[100] created modified
 /* Records */
