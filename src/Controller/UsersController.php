@@ -8,11 +8,13 @@ class UsersController extends AppController
 
     public function search()
     {
+        /* 描画処理 */
         $this->render('search');
     }
 
     public function index()
     {
+        /* ページング */
         $users = $this->paginate($this->Users);
 
         $this->set(compact('users'));

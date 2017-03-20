@@ -6,7 +6,7 @@ use Cake\Routing\Route\DashedRoute;
 
 Router::defaultRouteClass(DashedRoute::class);
 
-/* connect */
+/* ルートへの接続（ReDirect） */
 Router::connect('/', array('controller' => 'Users', 'action' => 'search'));
 
 /* scope */ 
